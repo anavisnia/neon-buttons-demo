@@ -1,0 +1,63 @@
+body,
+body * {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	word-break: break-all;
+	background-color: black;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.button {
+	display: inline-block;
+	margin: 0 10px;
+	width: 150px;
+	height: auto;
+	text-align: center;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.neon {
+	color: #fff;
+	background: linear-gradient(
+		145deg,
+		rgb(179, 237, 241),
+		rgb(119, 189, 255) 60%
+	);
+	border: 2px solid rgb(172, 205, 255);
+	box-shadow: 0 0 15px rgb(172, 205, 255);
+}
+
+.neon:hover {
+	animation-name: animate-neon;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animate-neon {
+	50% {
+		background: linear-gradient(
+			245deg,
+			rgb(179, 237, 241),
+			rgb(119, 189, 255) 60%
+		);
+	}
+	100% {
+		background: linear-gradient(
+			145deg,
+			rgb(179, 237, 241),
+			rgb(119, 189, 255) 60%
+		);
+	}
+}
